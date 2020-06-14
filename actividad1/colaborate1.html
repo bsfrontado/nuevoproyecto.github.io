@@ -23,7 +23,7 @@
         h6.five    {background-color: rgb(114,193,240);}
         h6.six     {background-color: rgb(84,182,237);}
     </style>
-    <style type="text/css">
+       <style type="text/css">
         div{ width: 100px;
              height: 100px;
              margin: 40px;
@@ -38,7 +38,22 @@
          p.one{ background-color:rgb(0,0,0); opacity:0,5;}
          p.two{ background-color:rgb(0,0,0); background-color:rgba(0,0,0,0,5);}
          p.three, p.four { background-color:white; color:rgb(44, 91, 179);width: 600px;}    
-     </style>
+         .thumb {
+            width: 200px;
+            transition:300ms all ease;
+        }
+        .grande {
+            width: 400px;
+        }
+        .titulo {
+            border: 1px solid navy;
+            background: #cccc;
+            padding: 10px;
+        }
+        .tituloGrande{
+            font-size: 60px;
+        }
+    </style>
 </head>
 <body>
     <h1>Bienvenidos</h1>
@@ -54,7 +69,7 @@
           únicamente a redes privadas, por ejemplo, en una intranet corporativa, o puede publicar las páginas en la World Wide Web. El acceso
            a las páginas web es realizado mediante una transferencia desde servidores, utilizando el protocolo de transferencia de hipertexto (HTTP).</h4>
            <iframe width="450" height="350" src="http://maps.google.co.uk/maps?q=IED+Gonsalo+Arango+bogota&amp;output=embed"> </iframe>
-           <video src="../video/puppy.mp4"
+       <video src="../video/puppy.mp4"
            poster="imges/puppy.jpg"
            width="400" height="300"
            preload
@@ -68,6 +83,7 @@
     <h6 class="two1">%2383289</h6>
     <h6 class="one1">%82893</h6>
     <h6 class="Zero">%892309</h6>
+  </body>
     <h1 id="encabezado" class="titulo">soy un encabezado \ˆ.ˆ</h1>
     <script>    
          var encabezado = document.getElementById("encabezado");
@@ -75,5 +91,18 @@
          encabezado.style.background = "#000000";
     </script>       
     <img src="../images/x.jpg" alt="X (Setonix brachyurus)" />
+    </script>   
+    <style type="text/css">
+    * { font-family: Perpetua, Verdana, sans-serif; color: #665544; } input { border-bottom: 1px dotted #dcdcdc;
+    border-top: none; border-right: none; border-left: none; padding: 5px; width: 280px;
+    margin-bottom: 20px;} input: focus { border: 1px dotted #dcdcdc; outline: none; } input#submit { color: #ffffff;
+    background-color: #665544; border: none; border-radius: 5px;
+    width: 80px;} input#submit:hover { color: #665544; background-color: #efefef;} fieldset { width: 350px;
+    border: 1px solid #dcdcdc; border-radius: 10px; padding: 20px;
+    text-align: right;} legend { background-color: #efefef;
+    border: 1px solid #dcdcdc; border-radius: 10px; padding: 10px 20px; text-align: left;
+    text-transform: uppercase;} </style> </head> <body> <form> <fieldset>
+    <legend>Boletín</legend> <label for="name">Nombre: </label><input type="text" id="name" /> <label for="email">Email: </label><input type="text" id="email" />
+    <input type="submit" value="Suscribete" id="submit" /> </fieldset> </form>    
 </body>
 </html>
